@@ -112,3 +112,56 @@ span {
 .dislike:hover {
   transform: scale(1.05);
 }
+
+.profile-wrap {
+  background: var(--color-background-secondary);
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+.profile-card {
+  background: white;
+  border: 0.5px solid #e0e0e0;
+  border-radius: 12px;
+  width: 320px;
+  overflow: hidden;
+}
+.profile-banner {
+  background: #EEEDFE;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3C3489;
+}
+.profile-photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: -48px;
+  padding: 0 1.25rem;
+}
+.profile-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+.profile-body {
+  padding: 12px 1.25rem 1.5rem;
+  text-align: center;
+}
+.profile-username {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 8px 0 4px;
+}
+.profile-label {
+  font-size: 13px;
+  color: gray;
+  margin: 0;
+}

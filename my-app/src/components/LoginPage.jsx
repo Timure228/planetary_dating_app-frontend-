@@ -19,6 +19,7 @@ export default function LoginPage({onLoginSuccess}) {
 
         localStorage.setItem('token', res.data.token);
         localStorage.setItem('username', res.data.username);
+        localStorage.setItem('profile_image', res.data.image_url);
         console.log(res.data.token)
         console.log("Logged in successfully as:", res.data.username);
         alert("Welcome back " + res.data.username + "!")
