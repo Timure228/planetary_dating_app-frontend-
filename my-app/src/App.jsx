@@ -43,7 +43,7 @@ function App() {
                 <button onClick={() => setCurrentPage('swipe')}>Swipe</button>
                 <button onClick={() => setCurrentPage('likes')}>Likes</button>
             </nav>
-                <h3>Logged in as {localStorage.getItem("username")}</h3>
+                <h4 style={{position: "absolute", right: "20px"}}>Logged in as {localStorage.getItem("username")}</h4>
 
             <main style={{padding: '20px'}}>
                 {currentPage === 'home' && <Home/>}

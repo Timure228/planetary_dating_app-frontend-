@@ -1,5 +1,6 @@
 html {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 span {
@@ -165,3 +166,71 @@ span {
   color: gray;
   margin: 0;
 }
+
+.form-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+.form-card {
+  background: white;
+  border: 0.5px solid #e0e0e0;
+  border-radius: 12px;
+  width: 380px;
+  overflow: hidden;
+}
+.form-banner {
+  background: #EEEDFE;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3C3489;
+}
+.form-body {
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.field label {
+  font-size: 13px;
+  color: gray;
+}
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.file-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0.5px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: gray;
+}
+.file-label input { display: none; }
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: #534AB7;
+  color: #EEEDFE;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.submit-btn:hover { background: #3C3489; }
