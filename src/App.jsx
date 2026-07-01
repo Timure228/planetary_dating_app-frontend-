@@ -4,7 +4,6 @@ import Home from "./components/Home.jsx";
 import SwipePage from "./components/SwipePage.jsx";
 import RegistryPage from "./components/RegistryPage.jsx";
 import LoginPage from "./components/LoginPage.jsx";
-import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import WhoLikedMe from "./components/WhoLikedMe.jsx";
 
 function App() {
