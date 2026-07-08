@@ -1,4 +1,4 @@
-import icon from "../../public/planetary_app_icon.png"
+import ad from "../../public/ad.png"
 
 export default function Home() {
 
@@ -22,6 +22,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <img src={ad} width={256} style={{display: "block", marginLeft: "auto"}} />
         </>
     )
 
