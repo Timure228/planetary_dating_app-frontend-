@@ -12,6 +12,8 @@ export default function SwipePage() {
     const [interested_in, setInterested_in] = useState("")
     const [city, setCity] = useState("")
 
+    const [message, setMessage] = useState("")
+
     const [noProfilesLeft, setNoProfilesLeft] = useState(false);
     const [refreshTrigger, setRefreshTrigger] = useState(0);
 
@@ -78,8 +80,26 @@ export default function SwipePage() {
             );
         }
     }
+
+    const handleMessage = () => {
+        fetch("https://planetary-dating-app-backend.onrender.com/api/message", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
+            },
+            body: JSON.stringify({
+                message_receiver: username,
+                message: message
+            })
+        }).catch(err => console.log("Message send error: " + err))
+    }
+
     return (
         <>
+            <label>Leave a message 💌</label>
+            <input onChange={(e) => setMessage(e.target.value)}/>
+            <button onClick={handleMessage}>Send</button>
             <div className="card-container">
                 <img className="swap-card" src={profile_img}></img>
                 <span className="card_profile_name">{username + " " + age}</span>
