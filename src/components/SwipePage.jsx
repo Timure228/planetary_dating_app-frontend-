@@ -26,7 +26,7 @@ export default function SwipePage() {
     const token = localStorage.getItem('token');
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/card-profile", {
+        fetch("https://planetary-dating-app-backend.onrender.com/api/card-profile", {
             method: "GET",
             headers: {"Authorization": `Bearer ${token}`}
         })
