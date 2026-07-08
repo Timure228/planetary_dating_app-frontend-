@@ -5,6 +5,7 @@ import SwipePage from "./components/SwipePage.jsx";
 import RegistryPage from "./components/RegistryPage.jsx";
 import LoginPage from "./components/LoginPage.jsx";
 import WhoLikedMe from "./components/WhoLikedMe.jsx";
+import Messages from "./components/Messages.jsx";
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -41,6 +42,7 @@ function App() {
                 <button onClick={() => setCurrentPage('register')}>Register</button>
                 <button onClick={() => setCurrentPage('swipe')}>Swipe</button>
                 <button onClick={() => setCurrentPage('likes')}>Likes</button>
+                <button onClick={() => setCurrentPage('messages')}>Messages</button>
             </nav>
                 <h4 style={{position: "absolute", right: "20px"}}>Logged in as {localStorage.getItem("username")}</h4>
 
@@ -50,6 +52,7 @@ function App() {
                 {currentPage === 'register' && <RegistryPage navigateTo={setCurrentPage}/>}
                 {currentPage === 'swipe' && <SwipePage/>}
                 {currentPage === 'likes' && <WhoLikedMe/>}
+                {currentPage === 'messages' && <Messages/>}
             </main>
         </>
     )

@@ -1,8 +1,6 @@
 import {useEffect, useState} from "react";
 
 export default function WhoLikedMe() {
-    const [swiper_username, setSwiper_Username] = useState("");
-    const [swiper_photo, setSwiper_Photo] = useState("");
     const token = localStorage.getItem('token');
 
     const [likes, setLikes] = useState([]);
