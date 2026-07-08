@@ -12,7 +12,7 @@ export default function LoginPage({onLoginSuccess}) {
     const handleLogin = async (e) => {
         e.preventDefault()
 
-        const res = await axios.post('http://localhost:5000/api/login', {
+        const res = await axios.post('https://planetary-dating-app-backend.onrender.com/api/login', {
             username: username,
             password: password
         }).catch(error => alert("Wrong Username or Password"));

@@ -48,7 +48,7 @@ export default function SwipePage() {
                 if (data.image_url) {
                     setProfile_img(data.image_url);
                 } else if (data.image_name) {
-                    setProfile_img("http://localhost:5000/uploads/" + data.image_name);
+                    setProfile_img("https://planetary-dating-app-backend.onrender.com/uploads/" + data.image_name);
                 }
             })
             .catch(err => alert(err.message));

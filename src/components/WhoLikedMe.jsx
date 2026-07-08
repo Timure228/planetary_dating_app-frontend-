@@ -8,7 +8,7 @@ export default function WhoLikedMe() {
     const [likes, setLikes] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/likes", {
+        fetch("https://planetary-dating-app-backend.onrender.com/api/likes", {
             method: "GET",
             headers: {"Authorization": `Bearer ${token}`}
         })

@@ -26,7 +26,7 @@ export default function RegistryPage() {
         formData.append('image_file', imageFile)
 
         try {
-            const response = axios.post('http://localhost:5000/api/register', formData, {
+            const response = axios.post('https://planetary-dating-app-backend.onrender.com/api/register', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
