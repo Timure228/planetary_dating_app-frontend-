@@ -55,7 +55,7 @@ export default function SwipePage() {
     }, [refreshTrigger]);
 
     const handleSwipe = (action) => {
-        fetch("http://localhost:5000/api/swipe", {
+        fetch("https://planetary-dating-app-backend.onrender.com/api/swipe", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
