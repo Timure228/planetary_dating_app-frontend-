@@ -21,7 +21,7 @@ export default function Messages() {
     return (
         <>
             <div style={{ maxHeight: "500px", overflowY: "auto", display: "flex", flexDirection: "column", gap: "8px"}}>
-                {messages.map((message) => (
+                {[...messages].reverse().map((message) => (
                     <div key={message.id} style={{
                         display: "flex",
                         alignItems: "center",
